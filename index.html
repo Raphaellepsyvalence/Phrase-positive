@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><h1>💎 Ta phrase positive du jour</h1>
+<title>💎 Ta phrase positive du jour</title>
 
 <style>
+
 body{
     margin:0;
     font-family:Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #56ab2f, #a8e063);
+    background:linear-gradient(135deg,#d8e2dc,#84a98c);
     display:flex;
     justify-content:center;
     align-items:center;
@@ -24,10 +25,12 @@ body{
     border-radius:25px;
     text-align:center;
     box-shadow:0 15px 40px rgba(0,0,0,.15);
+    border:2px solid #8B5A2B;
 }
 
 h1{
     color:#8B5A2B;
+    font-size:36px;
 }
 
 #phrase{
@@ -46,6 +49,7 @@ button{
     border-radius:50px;
     cursor:pointer;
     font-size:18px;
+    font-weight:bold;
     transition:.3s;
 }
 
@@ -59,6 +63,7 @@ footer{
     color:#000;
     font-size:14px;
 }
+
 </style>
 
 </head>
@@ -67,7 +72,7 @@ footer{
 
 <div class="card">
 
-<h1>✨ Ta phrase positive du jour</h1>
+<h1>💎 Ta phrase positive du jour</h1>
 
 <div id="phrase">
 Clique sur le bouton ☀️
@@ -88,19 +93,33 @@ Reviens chaque jour ❤️
 const phrases=[
 
 "Tu es exactement là où tu dois être.",
+
 "Le meilleur reste à venir.",
+
 "Tu es plus fort que tu ne le crois.",
+
 "Chaque petit pas compte.",
+
 "Aujourd'hui est rempli de possibilités.",
+
 "Tu mérites d'être heureux.",
+
 "Crois en toi.",
+
 "Le bonheur commence avec une pensée positive.",
+
 "Respire. Tu vas y arriver.",
+
 "Tu illumines plus de vies que tu ne l'imagines.",
+
 "N'abandonne jamais tes rêves.",
+
 "La patience est aussi une forme de courage.",
+
 "Tu as déjà traversé des moments difficiles : tu peux avancer encore.",
+
 "Choisis la joie aujourd'hui.",
+
 "Fais-toi confiance."
 
 ];
@@ -111,6 +130,7 @@ const hasard=Math.floor(Math.random()*phrases.length);
 
 document.getElementById("phrase").innerHTML=
 "❤️<br><br><strong>"+phrases[hasard]+"</strong>";
+
 }
 
 </script>
